@@ -13,7 +13,7 @@
 ## Demo
 
 Ви можете переглянути демо версію проекту за посиланням:
-[DEMO LINK](https://OPTMISTIXX.github.io/Turkish-Airlines-Landing/)
+[DEMO LINK](https://OPTIMISTIXX.github.io/Turkish-Airlines-Landing/)
 
 ## Технології
 
