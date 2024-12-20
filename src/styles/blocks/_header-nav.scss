@@ -1,0 +1,77 @@
+.header {
+  background-image: url("../images/header-image.png");
+  background-position: right;
+  background-size: cover;
+  color: var(--color-white);
+
+  &__nav {
+    @include flex-between;
+    @include tablet {
+      font-size: 16px;
+    }
+    padding: 24px 0;
+
+    &-left {
+      display: flex;
+    }
+  }
+
+  &__info {
+    width: 50%;
+    padding: 108px 0 80px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__title,
+  &__text {
+    @include mobile {
+      text-align: center;
+    }
+  }
+}
+
+.nav {
+  &__logo {
+    @include flex-center;
+    justify-content: flex-start;
+    flex-grow: 0;
+    gap: 8px;
+    color: var(--color-yellow);
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &__logo:hover {
+    transform: scale(1.1);
+  }
+
+  &__list {
+    @include flex-between;
+    gap: 20px;
+  }
+
+  &__link {
+    position: relative;
+
+    @include hover {
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      translate: -50%;
+      width: 0;
+      height: 2px;
+      background-color: currentColor;
+      transition-duration: inherit;
+    }
+  }
+}

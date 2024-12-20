@@ -1,4 +1,37 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+# Turkish Airlines Landing Page
+
+Це тестове завдання, яке демонструє створення Landing Page для авіакомпанії. Сторінка є адаптивною і використовує сучасні веб-технології для досягнення красивого та функціонального інтерфейсу.
+
+## Опис
+
+Цей проект є адаптивною веб-сторінкою, яка імітує сторінку для авіакомпанії з простою формою реєстрації на чистому HTML, CSS. Сторінка включає:
+- Головну навігацію
+- Інформаційні блоки про послуги
+- Картки для різних напрямків
+- Адаптивний дизайн для різних пристроїв
+
+## Demo
+
+Ви можете переглянути демо версію проекту за посиланням:
+[DEMO LINK](https://OPTMISTIXX.github.io/Turkish-Airlines-Landing/)
+
+## Технології
+
+- HTML5
+- CSS3
+- SCSS
+- Flexbox
+- CSS Grid
+- JavaScript
+
+## Інструкції по запуску
+
+1. Клонуйте репозиторій:
+   ```bash
+   git clone https://github.com/OPTMISTIXX/Turkish-Airlines-Landing.git
+2. Запустіть npm install в терміналі:
+   ```bash
+   npm install
+3. Запустіть npm start в терміналі:
+   ```bash
+   npm start

@@ -1,0 +1,49 @@
+body {
+  @include fluid-text(20, 18);
+
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  line-height: 1.28;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+a,
+input,
+button,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+h1 {
+  @include fluid-text(80, 40);
+}
+
+h2 {
+  @include fluid-text(48, 24);
+}
+
+h3 {
+  @include fluid-text(32, 16);
+}
+
+.form__button {
+  @include reset-button;
+  font-size: 16px;
+  font-family: 600;
+  border-radius: 24px;
+  padding: 16px 40px;
+}

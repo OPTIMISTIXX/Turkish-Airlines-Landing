@@ -1,0 +1,61 @@
+.destinations {
+  margin: 90px 0;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include desktop {
+      width: 50%;
+    }
+    @include desktop-above {
+      width: 30%;
+    }
+
+    @include mobile-above {
+      margin-right: 10%;
+    }
+  }
+  &__button {
+    @include hover {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      border: 1px solid;
+    }
+    color: var(--color-white);
+    background-color: var(--color-yellow);
+  }
+  &__container {
+    @include flex-between;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include desktop {
+    grid-template-columns: repeat(2, minmax(200px, 250px));
+  }
+  @include mobile {
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+  }
+  gap: 40px;
+  &__block {
+    max-width: 297px;
+  }
+
+  &__info {
+    @include mobile {
+      text-align: center;
+      display: block;
+    }
+    @include flex-between;
+    margin-top: 24px;
+  }
+
+  &__country {
+    color: var(--color-yellow);
+  }
+}
